@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hilltop Cafe | Fresh Coffee & Homemade Bakes</title>
+    <meta
+      name="description"
+      content="Hilltop Cafe serves handcrafted coffee, fresh pastries, and cozy hilltop views."
+    />
+    <link rel="icon" type="image/jpeg" href="hilltopcafe.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home">
+          <img
+            class="brand-logo"
+            src="hilltopcafe.jpg"
+            alt="Hilltop Cafe logo"
+            width="48"
+            height="48"
+          />
+          <span class="brand-text">Hilltop Cafe</span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#menu">Menu</a>
+          <a href="#story">Our Story</a>
+          <a href="#visit">Visit</a>
+          <a class="btn btn-nav" href="#contact">Order Pickup</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Neighborhood Coffee House</p>
+            <h1>Fresh Brews, Warm Bakes, and a View Worth Staying For.</h1>
+            <p>
+              Welcome to Hilltop Cafe, your cozy stop for artisan coffee,
+              breakfast bites, and relaxed afternoons with friends.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="#menu">See Menu</a>
+              <a class="btn btn-secondary" href="#visit">Plan Your Visit</a>
+            </div>
+          </div>
+          <aside class="hero-card" aria-label="Opening details">
+            <h2>Open Today</h2>
+            <p class="open-hours">7:00 AM - 6:00 PM</p>
+            <ul>
+              <li>Hand-pulled espresso</li>
+              <li>Freshly baked pastries</li>
+              <li>Outdoor patio seating</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="menu" class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Featured Favorites</p>
+            <h2>Menu Highlights</h2>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-item">
+              <h3>Hilltop House Latte</h3>
+              <p>
+                Smooth espresso with house vanilla bean syrup and steamed oat
+                milk.
+              </p>
+              <span>$5.50</span>
+            </article>
+            <article class="menu-item">
+              <h3>Maple Cinnamon Roll</h3>
+              <p>Made fresh every morning with local butter and maple glaze.</p>
+              <span>$4.75</span>
+            </article>
+            <article class="menu-item">
+              <h3>Garden Avocado Toast</h3>
+              <p>
+                Sourdough, smashed avocado, cherry tomatoes, chili flakes, and
+                lemon.
+              </p>
+              <span>$9.00</span>
+            </article>
+            <article class="menu-item">
+              <h3>Morning Quiche Slice</h3>
+              <p>
+                Rotating seasonal quiche with side greens and herb dressing.
+              </p>
+              <span>$8.50</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="section section-alt">
+        <div class="container story-grid">
+          <div>
+            <p class="eyebrow">Since 2016</p>
+            <h2>Built for Slow Mornings and Good Conversation.</h2>
+            <p>
+              Hilltop Cafe started as a tiny corner coffee bar and grew into a
+              community gathering spot. We source local ingredients, roast in
+              small batches, and keep things simple: quality food, kind service,
+              and space to breathe.
+            </p>
+          </div>
+          <blockquote>
+            "Our goal is to be your favorite part of the day - whether you are
+            grabbing a quick cortado or settling in for brunch."
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="visit" class="section">
+        <div class="container visit-grid">
+          <div>
+            <p class="eyebrow">Visit Us</p>
+            <h2>Hours & Location</h2>
+            <ul class="details-list">
+              <li><strong>Address:</strong> 18 Summit Lane, Hilltop</li>
+              <li><strong>Weekdays:</strong> 7:00 AM - 6:00 PM</li>
+              <li><strong>Saturday:</strong> 8:00 AM - 5:00 PM</li>
+              <li><strong>Sunday:</strong> 8:00 AM - 3:00 PM</li>
+              <li><strong>Phone:</strong> (555) 010-4823</li>
+            </ul>
+          </div>
+          <div class="visit-note">
+            <h3>Good To Know</h3>
+            <p>
+              Street parking is available on Summit Lane. We offer free Wi-Fi
+              and dog-friendly outdoor seating.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section cta">
+        <div class="container cta-wrap">
+          <h2>Ready for Pickup?</h2>
+          <p>
+            Call ahead for coffee boxes, pastry trays, and same-day breakfast
+            pickup.
+          </p>
+          <a class="btn" href="tel:+15550104823">Call Hilltop Cafe</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="current-year"></span> Hilltop Cafe. All rights reserved.</p>
+        <a href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
