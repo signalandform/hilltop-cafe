@@ -499,6 +499,159 @@ blockquote {
   font-family: 'Nunito', sans-serif;
 }
 
+
+.menu-board {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #2d1b20, #12090d 65%);
+  color: var(--whipped-cream);
+}
+
+.board-shell {
+  width: min(1400px, 94vw);
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4rem) 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.board-head {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.board-logo {
+  width: clamp(90px, 12vw, 160px);
+  height: auto;
+}
+
+.board-logo-wide {
+  width: clamp(180px, 32vw, 360px);
+}
+
+.board-head h1 {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+}
+
+.board-tagline {
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--rose-gold);
+}
+
+.board-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.board-grid.two-col {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.board-grid.three-col {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.board-section {
+  background: rgba(18, 9, 13, 0.85);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+}
+
+.board-section h2 {
+  margin-bottom: 0.85rem;
+  font-size: 1.75rem;
+}
+
+.board-section h3 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.board-section p,
+.board-section li,
+.board-note {
+  font-family: 'Nunito', sans-serif;
+  color: rgba(236, 227, 212, 0.88);
+}
+
+.board-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.board-list.price li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.board-list.price span:last-child {
+  color: var(--dusty-blush);
+  font-weight: 700;
+}
+
+.board-note {
+  margin-top: 0.8rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rose-gold);
+}
+
+.pill-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pill-list li {
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-family: 'Nunito', sans-serif;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.board-foot {
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: rgba(236, 227, 212, 0.65);
+  text-align: center;
+}
+
+.board-subgrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.board-subgrid.two {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.menu-board-links {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 @media (max-width: 840px) {
   .site-nav a:not(.btn-nav) {
     display: none;
