@@ -6,32 +6,35 @@
     <title>Menu | Hilltop Coffee Shop</title>
     <meta
       name="description"
-      content="Full drink and pastry menu for Hilltop Coffee Shop."
+      content="Full drink and pastry lineup from Hilltop Coffee Shop: classics, matcha bar, refreshers, and pastry case."
     />
-    <link rel="icon" type="image/jpeg" href="hilltopcafe.jpg" />
+    <link rel="icon" type="image/png" href="assets/logo-primary.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Arvo:wght@400;700&family=Nunito:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="menu-page">
     <header class="site-header">
       <div class="container nav-wrap">
         <a class="brand" href="index.html">
           <img
             class="brand-logo"
-            src="hilltopcafe.jpg"
+            src="assets/logo-primary.png"
             alt="Hilltop Coffee Shop logo"
-            width="48"
-            height="48"
+            width="56"
+            height="56"
           />
-          <span class="brand-text">Hilltop Coffee Shop</span>
+          <div class="brand-stack">
+            <span class="brand-text">Hilltop Coffee Shop</span>
+            <span class="brand-tagline">Baked Goods & Coffee</span>
+          </div>
         </a>
         <nav class="site-nav" aria-label="Main navigation">
-          <a href="index.html">Home</a>
+          <a href="index.html#home">Home</a>
           <a href="#coffee">Coffee</a>
           <a href="#matcha">Matcha</a>
           <a href="#pastries">Pastries</a>
@@ -41,13 +44,13 @@
     </header>
 
     <main>
-      <section class="section">
+      <section class="section hero menu-hero">
         <div class="container">
           <p class="eyebrow">Hilltop Menu</p>
-          <h1 class="menu-page-title">Coffee, Matcha, Refreshers, and Pastries</h1>
+          <h1 class="menu-page-title">Coffee, Matcha, Refreshers, Pastries</h1>
           <p class="menu-page-subtitle">
-            Items below are pulled from your posted menu images. Ask at the
-            counter for seasonal specials and current availability.
+            Everything below comes straight from the board inside the shop. Ask
+            the bar for seasonal specials, collab pastries, and limited syrups.
           </p>
         </div>
       </section>
@@ -115,7 +118,9 @@
       <section id="matcha" class="section">
         <div class="container">
           <h2>Matcha Menu</h2>
-          <p class="menu-note">16oz, one size only. All matcha drinks made with oat milk.</p>
+          <p class="menu-note">
+            16oz, one size only. All matcha drinks made with oat milk.
+          </p>
           <div class="menu-table">
             <p><span>Classic Ceremonial Matcha</span><strong>$7.99</strong></p>
             <p><span>Banana Bread Matcha</span><strong>$8.99</strong></p>
@@ -167,14 +172,14 @@
 
       <section id="pastries" class="section">
         <div class="container">
-          <h2>Coffee & Pastry</h2>
+          <h2>Pastry Case</h2>
 
           <h3>Croissants</h3>
           <ul class="tag-list">
             <li>Chocolate</li>
             <li>Butter</li>
             <li>Almond</li>
-            <li>Ham & Cheese</li>
+            <li>Ham &amp; Cheese</li>
             <li>Matcha</li>
           </ul>
 
@@ -209,7 +214,7 @@
           <ul class="tag-list">
             <li>Chocolate Chip (CC)</li>
             <li>Oatmeal Craisin</li>
-            <li>M&M</li>
+            <li>M&amp;M</li>
             <li>Snicker</li>
           </ul>
 
@@ -224,10 +229,13 @@
 
     <footer class="site-footer">
       <div class="container footer-wrap">
-        <p>
-          © <span id="current-year"></span> Hilltop Coffee Shop. All rights
-          reserved.
-        </p>
+        <div class="footer-left">
+          <img src="assets/wordmark.png" alt="Hilltop wordmark" />
+          <p>
+            © <span id="current-year"></span> Hilltop Coffee Shop · 8356 Thompson
+            Rd · Northlake, TX
+          </p>
+        </div>
         <a href="index.html">Back to home</a>
       </div>
     </footer>

@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hilltop Coffee Shop | Fresh Coffee & Homemade Bakes</title>
+    <title>Hilltop Coffee Shop | Dusty Blush & Neon Rose</title>
     <meta
       name="description"
-      content="Hilltop Coffee Shop serves handcrafted coffee, fresh pastries, and cozy hilltop views."
+      content="Hilltop Coffee Shop blends pastry-case comfort with neon-night energy. Artisan coffee, small-batch bakes, and a bandana-inspired space."
     />
-    <link rel="icon" type="image/jpeg" href="hilltopcafe.jpg" />
+    <link rel="icon" type="image/png" href="assets/logo-primary.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Arvo:wght@400;700&family=Nunito:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -23,16 +23,19 @@
         <a class="brand" href="#home">
           <img
             class="brand-logo"
-            src="hilltopcafe.jpg"
+            src="assets/logo-primary.png"
             alt="Hilltop Coffee Shop logo"
-            width="48"
-            height="48"
+            width="56"
+            height="56"
           />
-          <span class="brand-text">Hilltop Coffee Shop</span>
+          <div class="brand-stack">
+            <span class="brand-text">Hilltop Coffee Shop</span>
+            <span class="brand-tagline">Baked Goods & Coffee</span>
+          </div>
         </a>
         <nav class="site-nav" aria-label="Main navigation">
           <a href="menu.html">Menu</a>
-          <a href="#story">Our Story</a>
+          <a href="#story">Story</a>
           <a href="#visit">Visit</a>
           <a class="btn btn-nav" href="#contact">Order Pickup</a>
         </nav>
@@ -43,106 +46,148 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Neighborhood Coffee House</p>
-            <h1>Fresh Brews, Warm Bakes, and a View Worth Staying For.</h1>
+            <p class="eyebrow">Northlake, TX · Since 2016</p>
+            <h1>
+              Dusty blush mornings, neon rose nights, and coffee that feels like
+              home.
+            </h1>
             <p>
-              Welcome to Hilltop Coffee Shop, your cozy stop for artisan coffee,
-              breakfast bites, and relaxed afternoons with friends.
+              Hilltop Coffee Shop is a rabbit-run bakehouse with house syrups,
+              paisley-lined shelves, and espresso that keeps the regulars up the
+              hill. Grab a pastry, sink into a velvet booth, and stay a while.
             </p>
             <div class="hero-actions">
               <a class="btn" href="menu.html">See Full Menu</a>
               <a class="btn btn-secondary" href="#visit">Plan Your Visit</a>
             </div>
+            <div class="hero-badges">
+              <div class="badge">
+                <img src="assets/mascot-stamp.png" alt="Mascot stamp" />
+                <span>House mascot: The Hilltop Hare</span>
+              </div>
+              <div class="badge">
+                <span class="badge-label">Signature roast</span>
+                <strong>Velvet Espresso &lt; 36 sec</strong>
+              </div>
+            </div>
           </div>
-          <aside class="hero-card" aria-label="Opening details">
-            <h2>Open Today</h2>
-            <p class="open-hours">7:00 AM - 6:00 PM</p>
-            <ul>
-              <li>Hand-pulled espresso</li>
-              <li>Freshly baked pastries</li>
-              <li>Outdoor patio seating</li>
-            </ul>
+          <aside class="hero-media">
+            <img
+              class="hero-neon"
+              src="assets/wordmark-neon.jpg"
+              alt="Hilltop Coffee Shop neon sign"
+              width="500"
+              height="160"
+            />
+            <div class="hero-card" aria-label="Opening details">
+              <h2>Today’s Window</h2>
+              <p class="open-hours">7:00 AM – 6:00 PM</p>
+              <ul>
+                <li>Oatmilk honeycomb latte</li>
+                <li>Dusted cinnamon rolls (12 daily)</li>
+                <li>Paisley patio seating</li>
+              </ul>
+            </div>
           </aside>
         </div>
       </section>
 
-      <section id="menu" class="section">
+      <section class="section pattern-panel">
         <div class="container">
           <div class="section-head">
-            <p class="eyebrow">Featured Favorites</p>
-            <h2>Menu Highlights</h2>
+            <p class="eyebrow">Featured this week</p>
+            <h2>Bandana Bar Favorites</h2>
           </div>
           <div class="menu-grid">
             <article class="menu-item">
               <h3>Hilltop House Latte</h3>
               <p>
-                Smooth espresso with house vanilla bean syrup and steamed oat
-                milk.
+                Espresso, rose gold vanilla bean syrup, whipped cream cloud.
               </p>
               <span>$5.50</span>
             </article>
             <article class="menu-item">
               <h3>Maple Cinnamon Roll</h3>
-              <p>Made fresh every morning with local butter and maple glaze.</p>
+              <p>Rolled before sunrise, finished with whipped cream icing.</p>
               <span>$4.75</span>
             </article>
             <article class="menu-item">
               <h3>Garden Avocado Toast</h3>
               <p>
-                Sourdough, smashed avocado, cherry tomatoes, chili flakes, and
-                lemon.
+                Toasted sourdough, citrus-dressed greens, confit tomato relish.
               </p>
               <span>$9.00</span>
             </article>
             <article class="menu-item">
               <h3>Morning Quiche Slice</h3>
-              <p>
-                Rotating seasonal quiche with side greens and herb dressing.
-              </p>
+              <p>Seasonal veg, smoked cheddar, herbed salad.</p>
               <span>$8.50</span>
             </article>
+          </div>
+          <div class="pattern-note">
+            <img src="assets/wordmark.png" alt="Hilltop wordmark" />
+            <p>Printed menus + takeaway boxes carry the same wordmark.</p>
           </div>
         </div>
       </section>
 
-      <section id="story" class="section section-alt">
+      <section id="story" class="section story">
         <div class="container story-grid">
           <div>
-            <p class="eyebrow">Since 2016</p>
-            <h2>Built for Slow Mornings and Good Conversation.</h2>
+            <p class="eyebrow">Story</p>
+            <h2>Built for slow mornings, vinyl nights, and second cups.</h2>
             <p>
-              Hilltop Coffee Shop started as a tiny corner coffee bar and grew
-              into a
-              community gathering spot. We source local ingredients, roast in
-              small batches, and keep things simple: quality food, kind service,
-              and space to breathe.
+              Hilltop started as a weekend pop-up on Summit Lane. We kept the
+              paisley bandana from the first bake sale and still wrap our loaves
+              in it today. Everything is made small-batch, sourced locally, and
+              served with a wink from the Hilltop Hare.
             </p>
+            <div class="story-bits">
+              <div>
+                <span class="caption">Beans</span>
+                <strong>Single-origin rotating</strong>
+              </div>
+              <div>
+                <span class="caption">Bakes</span>
+                <strong>12 pastry styles daily</strong>
+              </div>
+              <div>
+                <span class="caption">Community</span>
+                <strong>Open mic every Thursday</strong>
+              </div>
+            </div>
           </div>
           <blockquote>
-            "Our goal is to be your favorite part of the day - whether you are
-            grabbing a quick cortado or settling in for brunch."
+            “Our goal is to be your favorite ritual—whether it’s a neon-lit
+            nightcap or a first-light cortado.”
           </blockquote>
         </div>
       </section>
 
-      <section id="visit" class="section">
+      <section id="visit" class="section visit">
         <div class="container visit-grid">
           <div>
-            <p class="eyebrow">Visit Us</p>
-            <h2>Hours & Location</h2>
+            <p class="eyebrow">Visit</p>
+            <h2>Hours &amp; Location</h2>
             <ul class="details-list">
               <li><strong>Address:</strong> 18 Summit Lane, Hilltop</li>
-              <li><strong>Weekdays:</strong> 7:00 AM - 6:00 PM</li>
-              <li><strong>Saturday:</strong> 8:00 AM - 5:00 PM</li>
-              <li><strong>Sunday:</strong> 8:00 AM - 3:00 PM</li>
+              <li><strong>Weekdays:</strong> 7:00 AM – 6:00 PM</li>
+              <li><strong>Saturday:</strong> 8:00 AM – 5:00 PM</li>
+              <li><strong>Sunday:</strong> 8:00 AM – 3:00 PM</li>
               <li><strong>Phone:</strong> (555) 010-4823</li>
             </ul>
           </div>
           <div class="visit-note">
-            <h3>Good To Know</h3>
+            <img
+              src="assets/mascot-stamp.png"
+              alt="Mascot stamp"
+              width="120"
+              height="120"
+            />
+            <h3>While You’re Here</h3>
             <p>
-              Street parking is available on Summit Lane. We offer free Wi-Fi
-              and dog-friendly outdoor seating.
+              Street parking on Summit Lane, free Wi-Fi, dog-friendly patio, and
+              a rotating collab pastry every Sunday.
             </p>
           </div>
         </div>
@@ -150,22 +195,28 @@
 
       <section id="contact" class="section cta">
         <div class="container cta-wrap">
-          <h2>Ready for Pickup?</h2>
-          <p>
-            Call ahead for coffee boxes, pastry trays, and same-day breakfast
-            pickup.
-          </p>
-          <a class="btn" href="tel:+15550104823">Call Hilltop Coffee Shop</a>
+          <div>
+            <p class="eyebrow">Pickup &amp; Catering</p>
+            <h2>Ready when you are.</h2>
+            <p>
+              Call ahead for coffee boxes, pastry towers, and same-day brunch
+              pickup. We box everything in dusty blush with a paisley liner.
+            </p>
+          </div>
+          <a class="btn btn-neon" href="tel:+15550104823">Call Hilltop</a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-wrap">
-        <p>
-          © <span id="current-year"></span> Hilltop Coffee Shop. All rights
-          reserved.
-        </p>
+        <div class="footer-left">
+          <img src="assets/wordmark.png" alt="Hilltop wordmark" />
+          <p>
+            © <span id="current-year"></span> Hilltop Coffee Shop · 8356 Thompson
+            Rd · Northlake, TX
+          </p>
+        </div>
         <a href="#home">Back to top</a>
       </div>
     </footer>
