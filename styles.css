@@ -159,10 +159,10 @@ p {
 }
 
 .btn-neon {
-  background: linear-gradient(120deg, var(--neon-rose), #ff6ebe);
-  color: white;
-  border: none;
-  box-shadow: 0 0 25px rgba(244, 54, 135, 0.65);
+  background: var(--dusty-blush);
+  color: var(--coffee-bean);
+  border-color: var(--dusty-blush);
+  box-shadow: none;
 }
 
 .hero {
@@ -216,37 +216,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-}
-
-.hero-badges {
-  margin-top: 1.5rem;
-  display: grid;
-  gap: 1rem;
-}
-
-.badge {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.9rem 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-  font-family: 'Nunito', sans-serif;
-}
-
-.badge img {
-  width: 54px;
-  height: 54px;
-  object-fit: contain;
-}
-
-.badge-label {
-  display: block;
-  text-transform: uppercase;
-  font-size: 0.65rem;
-  letter-spacing: 0.3em;
-  color: var(--dusty-blush);
 }
 
 .hero-media {
@@ -406,11 +375,6 @@ blockquote {
   border-radius: 20px;
   padding: 1.5rem;
   text-align: center;
-}
-
-.visit-note img {
-  width: 120px;
-  margin-bottom: 0.5rem;
 }
 
 .cta {
