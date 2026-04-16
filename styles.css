@@ -94,7 +94,8 @@ p {
 .brand-stack {
   display: flex;
   flex-direction: column;
-  line-height: 1.1;
+  gap: 0.25rem;
+  line-height: 1.15;
 }
 
 .brand-text {
@@ -815,5 +816,173 @@ blockquote {
 
   .menu-board-card {
     padding: 1.5rem;
+  }
+
+  .hero-gallery-track img {
+    aspect-ratio: 4 / 5;
+  }
+
+  .pattern-note {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pattern-note img {
+    width: 160px;
+  }
+
+  .cta-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-actions {
+    justify-content: center;
+  }
+
+  .footer-wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+
+  .nav-wrap {
+    min-height: 64px;
+    gap: 0.5rem;
+  }
+
+  .brand-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-text {
+    font-size: 1rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+  }
+
+  .site-nav {
+    gap: 0.6rem;
+  }
+
+  .btn-nav {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+  }
+
+  .hero {
+    padding: clamp(2rem, 6vw, 4rem) 0;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(1.6rem, 6vw, 2.3rem);
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-gallery {
+    border-radius: 18px;
+  }
+
+  .hero-gallery-track img {
+    aspect-ratio: 1 / 1;
+  }
+
+  .hero-gallery-dots {
+    bottom: 0.5rem;
+    gap: 0.35rem;
+  }
+
+  .hero-gallery-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .section {
+    padding: clamp(2.5rem, 5vw, 3.5rem) 0;
+  }
+
+  .section-head h2,
+  .board-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .menu-item {
+    padding: 1rem;
+    border-radius: 16px;
+  }
+
+  .menu-preview-card {
+    border-radius: 20px;
+    padding: 0.75rem;
+  }
+
+  .menu-preview-card img {
+    border-radius: 14px;
+  }
+
+  .visit-note {
+    padding: 1.2rem;
+  }
+
+  blockquote {
+    padding: 1.4rem;
+    border-radius: 18px;
+  }
+
+  .board-shell {
+    padding: clamp(1.5rem, 4vw, 2.5rem) 0 2rem;
+  }
+
+  .board-figure {
+    border-radius: 20px;
+    padding: 0.5rem;
+  }
+
+  .board-figure img {
+    border-radius: 14px;
+  }
+
+  .board-head h1 {
+    font-size: clamp(1.6rem, 6vw, 2.4rem);
+  }
+
+  .board-section {
+    border-radius: 20px;
+    padding: 1.2rem;
+  }
+
+  .menu-board-card {
+    border-radius: 22px;
+    padding: 1.2rem;
+    gap: 1.2rem;
+  }
+
+  .menu-board-card-media img {
+    border-radius: 16px;
+  }
+
+  .footer-left img {
+    width: 120px;
   }
 }
