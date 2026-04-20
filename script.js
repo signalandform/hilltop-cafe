@@ -62,6 +62,21 @@ if (yearEl) {
     interval = setInterval(next, DELAY);
   }
 
+  var prevBtn = gallery.querySelector(".hero-gallery-prev");
+  var nextBtn = gallery.querySelector(".hero-gallery-next");
+  if (prevBtn) {
+    prevBtn.addEventListener("click", function () {
+      goTo(current - 1);
+      resetAutoplay();
+    });
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener("click", function () {
+      goTo(current + 1);
+      resetAutoplay();
+    });
+  }
+
   var startX = 0;
   track.addEventListener("pointerdown", function (e) {
     startX = e.clientX;
