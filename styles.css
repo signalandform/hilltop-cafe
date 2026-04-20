@@ -382,11 +382,11 @@ p {
 
 .perks-list {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  text-align: left;
-  display: grid;
+  display: inline-grid;
   gap: 0.6rem;
+  text-align: left;
 }
 
 .perks-list li {
@@ -484,6 +484,10 @@ blockquote {
   color: rgba(236, 227, 212, 0.7);
 }
 
+.footer-left p {
+  margin: 0;
+}
+
 .footer-left img {
   width: 160px;
   filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.5));
@@ -512,11 +516,7 @@ blockquote {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 999px;
-  border: 1px solid currentColor;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1;
   transition: transform 0.2s ease;
 }
