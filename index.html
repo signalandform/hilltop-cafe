@@ -55,13 +55,13 @@
           <div class="hero-copy">
             <p class="eyebrow">Northlake, TX · Since 2026</p>
             <h1>
-              Dusty blush mornings, neon rose nights, and coffee that feels like
-              home.
+              Slow pours, sweet bakes, and a corner of Northlake that feels
+              like yours.
             </h1>
             <p>
-              Hilltop Coffee Shop is a neighborhood bakehouse with house syrups,
-              paisley-lined shelves, and espresso that keeps the regulars up the
-              hill. Grab a pastry, sink into a velvet booth, and stay a while.
+              Hilltop is a neighborhood coffee shop serving oat-milk matcha,
+              small-batch espresso drinks, and pastries pulled fresh from the
+              oven each morning. Order ahead, pull up a seat, and stay a while.
             </p>
             <div class="hero-actions">
               <a class="btn" href="menu.html">See Full Menu</a>
@@ -101,6 +101,10 @@
 
       <section class="section menu-preview" id="menu">
         <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Now Pouring</p>
+            <h2>Finalized Boards, Straight from the Shop</h2>
+          </div>
           <div class="menu-preview-grid">
             <a class="menu-preview-card" href="menu.html#coffee">
               <img src="assets/menu/menu3.png" alt="Coffee board preview" loading="lazy" />
@@ -131,37 +135,24 @@
         <div class="container">
           <div class="section-head">
             <p class="eyebrow">Featured this week</p>
-            <h2>Bandana Bar Favorites</h2>
           </div>
           <div class="menu-grid">
             <article class="menu-item">
-              <h3>Hilltop House Latte</h3>
-              <p>
-                Espresso, rose gold vanilla bean syrup, whipped cream cloud.
-              </p>
-              <span>$5.50</span>
+              <h3>Banana Bread Latte</h3>
+              <p>Espresso layered with our house banana pudding syrup and oat milk.</p>
             </article>
             <article class="menu-item">
-              <h3>Maple Cinnamon Roll</h3>
-              <p>Rolled before sunrise, finished with whipped cream icing.</p>
-              <span>$4.75</span>
+              <h3>Strawberry Cloud Matcha</h3>
+              <p>Ceremonial oat-milk matcha under a strawberry milk cold foam.</p>
             </article>
             <article class="menu-item">
-              <h3>Garden Avocado Toast</h3>
-              <p>
-                Toasted sourdough, citrus-dressed greens, confit tomato relish.
-              </p>
-              <span>$9.00</span>
+              <h3>Lavender Honey Latte</h3>
+              <p>Espresso, slow-steeped lavender honey syrup, steamed oat milk.</p>
             </article>
             <article class="menu-item">
-              <h3>Morning Quiche Slice</h3>
-              <p>Seasonal veg, smoked cheddar, herbed salad.</p>
-              <span>$8.50</span>
+              <h3>Almond Croissant</h3>
+              <p>Twice-baked with almond cream and pulled fresh from the oven.</p>
             </article>
-          </div>
-          <div class="pattern-note">
-            <img src="assets/wordmark.png" alt="Hilltop wordmark" />
-            <p>Printed menus + takeaway boxes carry the same wordmark.</p>
           </div>
         </div>
       </section>
@@ -172,7 +163,7 @@
             <p class="eyebrow">Story</p>
             <h2>Built for slow mornings, vinyl nights, and second cups.</h2>
             <p>
-              Hilltop started as a weekend pop-up on Summit Lane. We kept the
+              Hilltop started as a weekend pop-up in Northlake, TX. We kept the
               paisley bandana from the first bake sale and still wrap our loaves
               in it today. Everything is made small-batch, sourced locally, and
               served with friendly hospitality.
@@ -180,15 +171,15 @@
             <div class="story-bits">
               <div>
                 <span class="caption">Beans</span>
-                <strong>Single-origin rotating</strong>
+                <strong class="story-bit-line">Single-origin rotating</strong>
               </div>
               <div>
                 <span class="caption">Bakes</span>
-                <strong>12 pastry styles daily</strong>
+                <strong class="story-bit-line">12 pastry styles daily</strong>
               </div>
               <div>
                 <span class="caption">Community</span>
-                <strong>Open mic every Thursday</strong>
+                <strong class="story-bit-line">Open mic every Thursday</strong>
               </div>
             </div>
           </div>
@@ -205,8 +196,7 @@
             <p class="eyebrow">Visit</p>
             <h2>Hours &amp; Location</h2>
             <ul class="details-list">
-              <!-- TODO: Confirm and enter real business address -->
-              <li><strong>Address:</strong> [FULL ADDRESS]</li>
+              <li><strong>Address:</strong> Northlake, TX</li>
               <li><strong>Weekdays:</strong> 7:00 AM – 6:00 PM</li>
               <li><strong>Saturday:</strong> 8:00 AM – 5:00 PM</li>
               <li><strong>Sunday:</strong> 8:00 AM – 3:00 PM</li>
@@ -216,10 +206,12 @@
           </div>
           <div class="visit-note">
             <h3>While You’re Here</h3>
-            <p>
-              Street parking on Summit Lane, free Wi-Fi, dog-friendly patio, and
-              a rotating collab pastry every Sunday.
-            </p>
+            <ul class="perks-list">
+              <li><span class="perk-icon" aria-hidden="true">🚗</span>Free street parking out front</li>
+              <li><span class="perk-icon" aria-hidden="true">📶</span>Free Wi-Fi for every table</li>
+              <li><span class="perk-icon" aria-hidden="true">🐾</span>Dog-friendly patio</li>
+              <li><span class="perk-icon" aria-hidden="true">🥐</span>Rotating collab pastry every Sunday</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -247,13 +239,15 @@
     <footer class="site-footer">
       <div class="container footer-wrap">
         <div class="footer-left">
-          <img src="assets/wordmark.png" alt="Hilltop wordmark" />
+          <img src="assets/logo-primary.png" alt="Hilltop Coffee Shop logo" class="footer-logo" />
           <p>
-            <!-- TODO: Confirm and enter real business address -->
-            © <span id="current-year"></span> Hilltop Coffee Shop · [FULL ADDRESS]
+            © <span id="current-year"></span> Hilltop Coffee Shop · Northlake, TX
           </p>
         </div>
-        <a href="#home">Back to top</a>
+        <a class="back-to-top" href="#home">
+          Back to top
+          <span class="back-to-top-arrow" aria-hidden="true">↑</span>
+        </a>
       </div>
     </footer>
 
