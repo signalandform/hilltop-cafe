@@ -29,9 +29,17 @@ if (yearEl) {
     dotsWrap.appendChild(dot);
   });
 
-  function goTo(index) {
+  function goTo(index, instant) {
     current = ((index % total) + total) % total;
-    track.style.transform = "translateX(-" + current * 100 + "%)";
+    if (instant) {
+      var prev = track.style.transition;
+      track.style.transition = "none";
+      track.style.transform = "translateX(-" + current * 100 + "%)";
+      void track.offsetWidth;
+      track.style.transition = prev || "";
+    } else {
+      track.style.transform = "translateX(-" + current * 100 + "%)";
+    }
     var dots = dotsWrap.querySelectorAll(".hero-gallery-dot");
     dots.forEach(function (d, i) {
       d.classList.toggle("active", i === current);
@@ -39,7 +47,11 @@ if (yearEl) {
   }
 
   function next() {
-    goTo(current + 1);
+    if (current === total - 1) {
+      goTo(0, true);
+    } else {
+      goTo(current + 1);
+    }
   }
 
   function resetAutoplay() {
