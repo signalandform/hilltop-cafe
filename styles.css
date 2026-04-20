@@ -255,6 +255,25 @@ p {
   -webkit-user-drag: none;
 }
 
+.hero-gallery-number {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  min-width: 2.25rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(18, 9, 13, 0.75);
+  color: var(--whipped-cream);
+  font-family: var(--font-accent, var(--font-body));
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(236, 227, 212, 0.25);
+  pointer-events: none;
+  z-index: 2;
+}
+
 .hero-gallery-dots {
   position: absolute;
   bottom: 0.75rem;

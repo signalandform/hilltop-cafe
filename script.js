@@ -11,7 +11,9 @@ if (yearEl) {
   var track = gallery.querySelector(".hero-gallery-track");
   var images = track.querySelectorAll("img");
   var dotsWrap = gallery.querySelector(".hero-gallery-dots");
+  var numberEl = gallery.querySelector(".hero-gallery-number");
   var total = images.length;
+  if (numberEl) numberEl.textContent = "1 / " + total;
   var current = 0;
   var interval;
   var DELAY = 4000;
@@ -44,6 +46,7 @@ if (yearEl) {
     dots.forEach(function (d, i) {
       d.classList.toggle("active", i === current);
     });
+    if (numberEl) numberEl.textContent = (current + 1) + " / " + total;
   }
 
   function next() {
