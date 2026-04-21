@@ -881,6 +881,34 @@ blockquote {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
 }
 
+.menu-board-card-image {
+  display: block;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.menu-board-card-image a {
+  display: block;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.menu-board-card-image a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 52px rgba(0, 0, 0, 0.55);
+}
+
+.menu-board-card-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .menu-card-list {
   list-style: none;
   margin: 1.5rem 0;
