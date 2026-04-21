@@ -266,12 +266,12 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 2.25rem 1rem 2.75rem;
+  padding: 2.25rem 1.5rem 2.75rem;
   font-family: var(--font-display);
-  font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+  font-size: clamp(1.15rem, 2.65vw, 1.4rem);
   letter-spacing: 0.02em;
   color: var(--whipped-cream);
-  text-align: center;
+  text-align: left;
   background: linear-gradient(
     to top,
     rgba(18, 9, 13, 0.88) 0%,
