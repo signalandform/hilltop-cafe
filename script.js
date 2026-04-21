@@ -9,10 +9,11 @@ if (yearEl) {
   if (!gallery) return;
 
   var track = gallery.querySelector(".hero-gallery-track");
-  var images = track.querySelectorAll("img");
+  var slides = track.querySelectorAll(".hero-gallery-slide");
+  if (!slides.length) slides = track.querySelectorAll("img");
   var dotsWrap = gallery.querySelector(".hero-gallery-dots");
   var numberEl = gallery.querySelector(".hero-gallery-number");
-  var total = images.length;
+  var total = slides.length;
   if (numberEl) numberEl.textContent = "1 / " + total;
   var current = 0;
   var interval;
@@ -20,7 +21,7 @@ if (yearEl) {
 
   track.style.transform = "translateX(0)";
 
-  images.forEach(function (_, i) {
+  slides.forEach(function (_, i) {
     var dot = document.createElement("button");
     dot.className = "hero-gallery-dot" + (i === 0 ? " active" : "");
     dot.setAttribute("aria-label", "Show image " + (i + 1));
