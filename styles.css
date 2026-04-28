@@ -373,19 +373,15 @@ p {
 }
 
 .menu-item {
-  background: var(--midnight);
+  background: rgba(26, 17, 19, 0.75);
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 1.3rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-.pattern-panel .menu-item h3 {
-  color: var(--whipped-cream);
-}
-
 .menu-item p {
-  color: rgba(236, 227, 212, 0.9);
+  color: rgba(236, 227, 212, 0.8);
 }
 
 .menu-item span {
@@ -394,7 +390,7 @@ p {
 }
 
 .pattern-panel {
-  background: var(--coffee-bean);
+  background: var(--midnight);
   position: relative;
 }
 
@@ -973,19 +969,13 @@ blockquote {
 }
 
 .promo-spotlight {
-  background: var(--coffee-bean);
-  border-block: 1px solid var(--border);
-}
-
-.promo-spotlight .section-head .eyebrow,
-.pattern-panel .section-head .eyebrow {
-  color: var(--whipped-cream);
+  background: linear-gradient(180deg, rgba(34, 24, 26, 0.35) 0%, transparent 100%);
+  border-bottom: 1px solid var(--border);
 }
 
 .promo-spotlight .section-head h2 {
   margin: 0.35rem 0 0;
   font-size: clamp(1.75rem, 3.5vw, 2.25rem);
-  color: var(--whipped-cream);
 }
 
 .promo-spotlight-grid {
@@ -1021,7 +1011,6 @@ blockquote {
   font-size: clamp(1.15rem, 2.2vw, 1.35rem);
   margin: 0 0 0.5rem;
   line-height: 1.3;
-  color: var(--whipped-cream);
 }
 
 .promo-spotlight-sub {
@@ -1030,13 +1019,13 @@ blockquote {
   font-size: 0.82rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: rgba(236, 227, 212, 0.9);
+  color: var(--rose-gold);
   line-height: 1.5;
 }
 
 .promo-spotlight-announce {
   margin: 0;
-  color: rgba(236, 227, 212, 0.92);
+  color: rgba(236, 227, 212, 0.88);
   font-size: 1rem;
   line-height: 1.65;
 }
