@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Libre_Baskerville } from "next/font/google";
 import "../styles.css";
 
@@ -19,7 +18,9 @@ export const metadata: Metadata = {
   description:
     "Hilltop Coffee Shop blends pastry-case comfort with neon-night energy in Northlake, TX.",
   icons: {
-    icon: "/assets/logo-primary.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/assets/logo-primary.png",
   },
   openGraph: {
     title: "Hilltop Coffee Shop",
@@ -40,10 +41,6 @@ export default function RootLayout({
     <html lang="en" className={libreBaskerville.variable}>
       <body>
         {children}
-        <Script id="vercel-analytics-queue">
-          {`window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };`}
-        </Script>
-        <Script defer src="/_vercel/insights/script.js" />
       </body>
     </html>
   );
