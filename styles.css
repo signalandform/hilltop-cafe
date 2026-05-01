@@ -632,9 +632,9 @@ blockquote {
 }
 
 .footer-brand-logo {
-  width: 20px;
-  height: 20px;
-  border-radius: 999px;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
   object-fit: cover;
   background: var(--whipped-cream);
   border: 1px solid rgba(236, 227, 212, 0.35);
