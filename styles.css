@@ -608,6 +608,40 @@ blockquote {
   letter-spacing: 0.2em;
 }
 
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.footer-wrap .footer-brand-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid rgba(216, 157, 159, 0.25);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  background: rgba(216, 157, 159, 0.08);
+  color: rgba(236, 227, 212, 0.72);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.footer-wrap .footer-brand-tag span {
+  color: var(--dusty-blush);
+}
+
+.footer-wrap .footer-brand-tag:hover,
+.footer-wrap .footer-brand-tag:focus {
+  border-color: rgba(244, 54, 135, 0.5);
+  background: rgba(244, 54, 135, 0.12);
+  color: var(--whipped-cream);
+}
+
 .back-to-top {
   display: inline-flex;
   align-items: center;
@@ -1243,6 +1277,10 @@ blockquote {
   .footer-wrap {
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
   }
 
   .footer-left {
